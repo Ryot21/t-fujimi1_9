@@ -409,7 +409,7 @@ h1.s-3L, h2.s-3L, h3.s-3L, h4.s-3L, h5.s-3L, h6.s-3L, p.s-3L, a.s-3L, span.s-3L,
 }
 h1.s-kome, h2.s-kome, h3.s-kome, h4.s-kome, h5.s-kome, h6.s-kome, p.s-kome, a.s-kome, span.s-kome, label.s-kome, button.s-kome {
   font-size: 1rem;
-  color: #dacebc;
+  color: #3b3b3b;
   transform: scale(0.8);
 }
 @media (width >= 768px) {
@@ -4225,8 +4225,8 @@ button.swiper-pagination-bullet {
     text-align: center;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r {
-    top: 82%;
-    left: 83%;
+    top: 78%;
+    left: 85%;
   }
   .c-contents.-f-view .c-contentsBox.-f-title.-f-title_r::after {
     position: absolute;
@@ -4551,6 +4551,10 @@ button.swiper-pagination-bullet {
   content: "OWNER VOICE";
   white-space: nowrap;
 }
+.c-contents_title.-works::before {
+  content: "WORKS";
+  white-space: nowrap;
+}
 .c-contents_title.-sample::before {
   content: "CONTENT TITLE";
   white-space: nowrap;
@@ -4861,6 +4865,13 @@ button.swiper-pagination-bullet {
 
 .c-flex {
   display: flex;
+}
+.c-flex.-col3_workItem {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.c-flex.-col3_workItem .flexItem {
+  width: 33.3333%;
 }
 .c-flex.-jc-sb {
   justify-content: space-between;

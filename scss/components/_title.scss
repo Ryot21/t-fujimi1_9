@@ -71,6 +71,7 @@
     &.-portfolio{&::before{content: "CONSTRUCTION PORTFOLIO"; white-space: nowrap;}}// 施工例
     &.-owner{&::before{content: "OWNER VOICE"; white-space: nowrap;}}               // オーナー
 
+    &.-works{&::before{content: "WORKS"; white-space: nowrap;}}
     &.-sample{&::before{content: "CONTENT TITLE"; white-space: nowrap;}}            // サンプル
 }
 

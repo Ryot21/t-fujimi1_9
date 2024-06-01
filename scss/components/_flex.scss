@@ -2,6 +2,15 @@
 .c-flex{
     display: flex;
 
+    &.-col3_workItem{
+        display: flex;
+        flex-wrap: nowrap;
+        .flexItem{
+            width: 33.3333%;
+        }
+    }
+
+
     // 配置
     &.-jc-sb{justify-content: space-between;}
     &.-jc-c_s{
