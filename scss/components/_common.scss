@@ -15,6 +15,15 @@
         }
     }
 }
+.w-title{
+    width: 75%;
+    margin: auto;
+    @include min(768){
+        width: 35%;
+    }
+}
+
+
 // 横幅
 .w1100{
     @include min(768){
@@ -40,6 +49,14 @@
 }
 .w90{
     width: 90%;
+    margin: auto;
+}
+.w80{
+    width: 80%;
+    margin: auto;
+}
+.w70{
+    width: 70%;
     margin: auto;
 }
 .w95s{
@@ -83,9 +100,9 @@
         }
     }
     &.-solid{
-        border: 1px solid $site-color01;
+        border: 1px solid $main-color--b;
         @include min(768){
-            border: 1px solid $site-color01;
+            border: 1px solid $main-color--b;
         }
     }
 }

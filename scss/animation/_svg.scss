@@ -1,0 +1,13 @@
+.a{
+    &-svgMove{//フルフル動く
+        animation-name: svgMove;
+        @keyframes svgMove {
+            0%{
+
+            }
+            100%{
+
+            }
+        }
+    }
+}

@@ -5,6 +5,9 @@
 }
 
 .c-contents{
+	&.-colorBox{
+		background: $site-color02;
+	}
 	&-inner{
 		width: 90%;
 		margin: auto;
@@ -137,8 +140,9 @@
 	}
 	&.-f-view{//ファーストビュー
 		position: relative;
-		overflow: hidden;
+		
 		.imgBox{
+			overflow: hidden;
 			// @include max(768){
 			// 	opacity: .75;
 			// }
@@ -331,7 +335,6 @@
 					}
 				}
 			}
-			
 			// ファーストビュー > スライダー部分
 			&.-sliderBg{
 				top: 50%;
@@ -339,6 +342,38 @@
 				transform: translate(-50%, -50%);
 				width: 100%;
 				z-index: -1;
+			}
+			// 設備・仕様 > 
+			&.-m-logo{
+				top: 2%;
+				width: 30%;
+				@include max(768){
+					left: 1%;
+				}
+				@include min(768){
+					top: 2%;
+					right: 0;
+					width: 10%;
+				}
+			}
+			&.-eraberu-logo{
+				bottom: 25%;
+				right: 0;
+				width: 15%;
+				@include min(768){
+					bottom: 0;
+					width: 12%;
+				}
+			}
+			&.-or{
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 9%;
+				z-index: 1;
+				@include min(768){
+					width: 5%;
+				}
 			}
 		}
 	}

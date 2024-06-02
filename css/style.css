@@ -10,7 +10,8 @@ html {
 }
 
 body,
-ul, li {
+ul, li,
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2709,6 +2710,16 @@ button.swiper-pagination-bullet {
   }
 }
 
+.w-title {
+  width: 75%;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .w-title {
+    width: 35%;
+  }
+}
+
 @media (width >= 768px) {
   .w1100 {
     width: 100%;
@@ -2739,6 +2750,16 @@ button.swiper-pagination-bullet {
 
 .w90 {
   width: 90%;
+  margin: auto;
+}
+
+.w80 {
+  width: 80%;
+  margin: auto;
+}
+
+.w70 {
+  width: 70%;
   margin: auto;
 }
 
@@ -2790,11 +2811,11 @@ button.swiper-pagination-bullet {
   }
 }
 .c-borderBox.-solid {
-  border: 1px solid #f1a07d;
+  border: 1px solid #3b3b3b;
 }
 @media (width >= 768px) {
   .c-borderBox.-solid {
-    border: 1px solid #f1a07d;
+    border: 1px solid #3b3b3b;
   }
 }
 
@@ -4066,6 +4087,9 @@ button.swiper-pagination-bullet {
   height: auto;
 }
 
+.c-contents.-colorBox {
+  background: #cc6633;
+}
 .c-contents-inner {
   width: 90%;
   margin: auto;
@@ -4200,6 +4224,8 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view {
   position: relative;
+}
+.c-contents.-f-view .imgBox {
   overflow: hidden;
 }
 .c-contents.-f-view .c-contentsBox {
@@ -4424,6 +4450,45 @@ button.swiper-pagination-bullet {
   width: 100%;
   z-index: -1;
 }
+.c-contents.-imgBg .c-contentsBox.-m-logo {
+  top: 2%;
+  width: 30%;
+}
+@media (768px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-m-logo {
+    left: 1%;
+  }
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-m-logo {
+    top: 2%;
+    right: 0;
+    width: 10%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-eraberu-logo {
+  bottom: 25%;
+  right: 0;
+  width: 15%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-eraberu-logo {
+    bottom: 0;
+    width: 12%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-or {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9%;
+  z-index: 1;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-or {
+    width: 5%;
+  }
+}
 
 .c-contents_title {
   position: relative;
@@ -4555,9 +4620,76 @@ button.swiper-pagination-bullet {
   content: "WORKS";
   white-space: nowrap;
 }
+.c-contents_title.-iot::before {
+  content: "INTERNET OF THINGS";
+  white-space: nowrap;
+}
+.c-contents_title.-flooring::before {
+  content: "FLOORING";
+  white-space: nowrap;
+}
+.c-contents_title.-otherEq::before {
+  content: "OTHER EQUIPMENT";
+  white-space: nowrap;
+}
+.c-contents_title.-door::before {
+  content: "INDOOR FITTINGS";
+  white-space: nowrap;
+}
 .c-contents_title.-sample::before {
   content: "CONTENT TITLE";
   white-space: nowrap;
+}
+
+.c-contentsBox_title {
+  position: relative;
+}
+.c-contentsBox_title::before {
+  content: "";
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  font-size: 10px;
+}
+@media (width >= 768px) {
+  .c-contentsBox_title::before {
+    bottom: -45%;
+    font-size: 12px;
+  }
+}
+.c-contentsBox_title.-b-btm {
+  margin-bottom: 5%;
+}
+.c-contentsBox_title.-b-btm::after {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -7.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1100px;
+  height: 1px;
+  background: #3b3b3b;
+}
+@media (width >= 768px) {
+  .c-contentsBox_title.-b-btm::after {
+    bottom: -15px;
+  }
+}
+.c-contentsBox_title.-b-btm.-c01::after {
+  background: #f1a07d !important;
+}
+.c-contentsBox_title.-b-btm.-c02::after {
+  background: #cc6633 !important;
+}
+.c-contentsBox_title.-b-btm.-c03::after {
+  background: #f2d341 !important;
+}
+.c-contentsBox_title.-b-btm.-c04::after {
+  background: #a0a0a0 !important;
 }
 
 .c-contents_MainTitle {
@@ -4891,6 +5023,11 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-col-2_plan .flexItem:nth-child(1) {
+    width: 23%;
+  }
+}
+@media (width >= 1200px) {
+  .c-flex.-col-2_plan .flexItem:nth-child(1) {
     width: 20%;
   }
 }
@@ -4903,6 +5040,53 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-flex.-col-2_plan .flexItem:nth-child(2) {
     width: 70%;
+  }
+}
+.c-flex.-col3_6 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.c-flex.-col3_6 li {
+  width: 33.3333333333%;
+}
+@media (width >= 768px) {
+  .c-flex.-col3_6 li {
+    width: 16.6666666667%;
+  }
+}
+.c-flex.-col-2_ISO {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (width >= 768px) {
+  .c-flex.-col-2_ISO {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+@media (768px >= width) {
+  .c-flex.-col-2_ISO .flexItem:nth-child(1) {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-col-2_ISO .flexItem:nth-child(1) {
+    width: 23%;
+  }
+}
+@media (width >= 1200px) {
+  .c-flex.-col-2_ISO .flexItem:nth-child(1) {
+    width: 25%;
+  }
+}
+.c-flex.-col-2_ISO .flexItem:nth-child(2) {
+  width: 100%;
+  margin: auto;
+}
+@media (width >= 768px) {
+  .c-flex.-col-2_ISO .flexItem:nth-child(2) {
+    width: 75%;
   }
 }
 .c-flex.-jc-sb {
@@ -4965,32 +5149,27 @@ button.swiper-pagination-bullet {
 .c-flex.-col1_2 {
   flex-wrap: wrap;
 }
-@media (width >= 768px) {
-  .c-flex.-col1_2 {
-    flex-wrap: nowrap;
-  }
-}
-.c-flex.-col1_2 li {
+.c-flex.-col1_2 .flexItem {
   width: 100%;
 }
 @media (width >= 768px) {
-  .c-flex.-col1_2 li {
+  .c-flex.-col1_2 .flexItem {
     width: calc(50% - 15px);
   }
-  .c-flex.-col1_2 li:nth-child(1) {
+  .c-flex.-col1_2 .flexItem:nth-child(odd) {
     margin-right: 15px;
   }
-  .c-flex.-col1_2 li:nth-child(2) {
+  .c-flex.-col1_2 .flexItem:nth-child(even) {
     margin-left: 15px;
   }
 }
 @media (width >= 768px) {
-  .c-flex.-col1_2 li.text {
+  .c-flex.-col1_2 .flexItem.text {
     width: calc(35% - 15px);
   }
 }
 @media (width >= 768px) {
-  .c-flex.-col1_2 li.img {
+  .c-flex.-col1_2 .flexItem.img {
     width: calc(65% - 15px);
   }
 }
@@ -7820,4 +7999,9 @@ a {
 
 .su {
   animation-delay: 2s;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.a-svgMove {
+  animation-name: svgMove;
+}
+@keyframes svgMove {}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.1627809 165.1626841">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke: #515151;
+        stroke-width: 1.9204947px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        stroke: #6b6b6b;
+        stroke-dasharray: 0 0 5.5018144 5.5018144;
+        stroke-width: .5487132px;
+      }
+    </style>
+  </defs>
+  <g id="equipment">
+    <g>
+      <g class="cls-1">
+        <circle class="cls-2" cx="82.5814146" cy="82.5813663" r="82.3069492" transform="translate(-34.2063077 82.5814005) rotate(-45)"/>
+        <circle class="cls-4" cx="82.5813904" cy="82.5813663" r="82.3069593" transform="translate(-12.1617153 150.868349) rotate(-80.7825234)"/>
+      </g>
+      <g>
+        <g>
+          <path class="cls-3" d="m34.0718724,82.5813904v32.4477252h33.9118212v-32.4780195"/>
+          <path class="cls-3" d="m79.6521337,82.5510961v26.5148793l27.736524,5.9631402v-32.4477252"/>
+          <path class="cls-3" d="m28.8122765,82.5813904v37.9943912h83.8360739v-37.9943912"/>
+        </g>
+        <line class="cls-3" x1="23.1816962" y1="82.5510961" x2="118.2788339" y2="82.5510961"/>
+        <rect class="cls-3" x="23.1816962" y="44.5869025" width="95.0971377" height="3.4102879"/>
+        <rect class="cls-3" x="24.9763197" y="47.9971904" width="91.5078908" height="34.5539058"/>
+        <g>
+          <line class="cls-3" x1="127.7956035" y1="60.0806528" x2="127.7956035" y2="109.9850642"/>
+          <polyline class="cls-3" points="122.3207534 65.0721489 127.7956035 59.5972988 133.2704536 65.0721489"/>
+        </g>
+        <g>
+          <line class="cls-3" x1="141.6685597" y1="109.5017102" x2="141.6685597" y2="59.5972988"/>
+          <polyline class="cls-3" points="136.1937096 104.5102141 141.6685597 109.9850642 147.1434098 104.5102141"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
