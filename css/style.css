@@ -133,7 +133,7 @@ p {
 }
 @font-face {
   font-family: "gothic-font01";
-  src: url("../fonts/gothic/FOT-RodinNTLGPro-M.otf") format("opentype");
+  src: url("../fonts/gothic/ZenKakuGothicNew-Regular.ttf") format("truetype");
 }
 h1, h2, h3, h4, h5, h6, p, a, span, label, button {
   color: #3b3b3b;
@@ -2779,12 +2779,13 @@ button.swiper-pagination-bullet {
 
 .bannerArea {
   width: 60%;
-  max-width: 400px;
+  max-width: 170px;
   margin: auto;
 }
 @media (width >= 768px) {
   .bannerArea {
-    width: 37%;
+    width: 20%;
+    max-width: 200px;
   }
 }
 
@@ -3297,16 +3298,6 @@ button.swiper-pagination-bullet {
   .c-footer-wrapper.-v02 {
     width: 90%;
   }
-}
-.c-footer-wrapper::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 1px;
-  background: #3b3b3b;
 }
 .c-footer__contactArea .c-footer__contactLists {
   position: relative;
@@ -4087,6 +4078,14 @@ button.swiper-pagination-bullet {
   height: auto;
 }
 
+.c-contents.-obi {
+  margin: auto;
+}
+@media (width >= 768px) {
+  .c-contents.-obi {
+    width: 47%;
+  }
+}
 .c-contents.-colorBox {
   background: #cc6633;
 }
@@ -4872,6 +4871,22 @@ button.swiper-pagination-bullet {
     padding-left: 12%;
   }
 }
+@media (width >= 768px) {
+  .c-contents_subTitle.-stationBox.-long {
+    padding-left: 6% !important;
+    margin-bottom: 2% !important;
+  }
+}
+@media (width >= 768px) {
+  .c-contents_subTitle.-stationBox.-long::after {
+    width: 7% !important;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents_subTitle.-stationBox.-long::after {
+    width: 7% !important;
+  }
+}
 .c-contents_subTitle.-stationBox.-ver02 {
   padding-left: 17%;
 }
@@ -4886,7 +4901,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents_subTitle.-stationBox.-s_1::after {
-  content: "西武池袋線";
+  content: "西武新宿線";
   top: 42%;
   font-size: 10px;
   text-align: center;
@@ -5489,13 +5504,13 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-shop-information li:nth-child(1) {
-    width: 43%;
+    width: 50%;
   }
   .c-flex.-shop-information li:nth-child(2) {
     width: 9%;
   }
   .c-flex.-shop-information li:nth-child(3) {
-    width: 48%;
+    width: 41%;
   }
 }
 @media (width >= 1400px) {
@@ -5503,13 +5518,13 @@ button.swiper-pagination-bullet {
     margin: 0 !important;
   }
   .c-flex.-shop-information li:nth-child(1) {
-    width: 47%;
+    width: 52%;
   }
   .c-flex.-shop-information li:nth-child(2) {
     width: 8%;
   }
   .c-flex.-shop-information li:nth-child(3) {
-    width: 45%;
+    width: 40%;
   }
 }
 .c-flex.-shop-information_col2 {
@@ -5531,13 +5546,13 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-flex.-shop-information_col2 li:nth-child(1) {
-    width: 61%;
+    width: 59%;
   }
   .c-flex.-shop-information_col2 li:nth-child(2) {
     width: 15%;
   }
   .c-flex.-shop-information_col2 li:nth-child(3) {
-    width: 24%;
+    width: 26%;
   }
   .c-flex.-shop-information_col2 li:nth-child(1), .c-flex.-shop-information_col2 li:nth-child(2), .c-flex.-shop-information_col2 li:nth-child(3) {
     margin: 0 !important;
