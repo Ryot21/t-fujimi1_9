@@ -6088,6 +6088,17 @@ a {
   left: 50%;
   background: #636363;
 }
+.c-link.-sample {
+  width: 65%;
+  margin: 0 auto;
+  background: #34403b;
+}
+@media (width >= 768px) {
+  .c-link.-sample {
+    width: 30%;
+    max-width: 300px;
+  }
+}
 @media (width >= 768px) {
   .c-link.-c-color {
     transition: 1s all;

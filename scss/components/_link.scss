@@ -117,7 +117,15 @@
 			}
 		}
 	}
-
+	&.-sample{
+		width: 65%;
+		margin: 0 auto;
+		background: $site-color02;
+		@include min(768){
+			width: 30%;
+			max-width: 300px;
+		}
+	}
 	&.-c-color{
 		@include min(768){
 			transition: 1s all;
